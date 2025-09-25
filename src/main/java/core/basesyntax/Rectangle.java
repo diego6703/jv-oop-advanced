@@ -1,9 +1,9 @@
 package core.basesyntax;
 
-public class Rectangle  extends FigureWithBottomAndHeigh {
+public class Rectangle extends FigureWithBottomAndHeigh {
 
-    public Rectangle(String color, double bottom, double heigh ) {
-        super(color, bottom ,heigh);
+    public Rectangle(String color, double bottom, double heigh) {
+        super(color, bottom, heigh);
         area = getArea();
     }
 
@@ -14,6 +14,7 @@ public class Rectangle  extends FigureWithBottomAndHeigh {
 
     @Override
     public void draw() {
-        System.out.println("Figure: rectangle, area: " + area + " sq. units, bottom: " + bottom + " units, heigh: " + heigh + " color: " + color);
+        System.out.println("Figure: rectangle, area: " + area + " sq. units, bottom: " +
+                bottom + " units, heigh: " + heigh + " color: " + color);
     }
 }

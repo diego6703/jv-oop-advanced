@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public abstract class FigureWithBottomAndHeigh extends Figure{
+public abstract class FigureWithBottomAndHeigh extends Figure {
     protected double bottom;
     protected double heigh;
 

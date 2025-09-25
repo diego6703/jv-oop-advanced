@@ -2,7 +2,7 @@ package core.basesyntax;
 
 public class RightTriangle extends FigureWithBottomAndHeigh {
     public RightTriangle(String color, double bottom, double heigh) {
-        super(color, bottom ,heigh);
+        super(color, bottom, heigh);
         area = getArea();
     }
 
@@ -13,6 +13,7 @@ public class RightTriangle extends FigureWithBottomAndHeigh {
 
     @Override
     public void draw() {
-        System.out.println("Figure: right triangle, area: " + area + " sq. units, bottom: " + bottom + " units, heigh: " + heigh + " color: " + color);
+        System.out.println("Figure: right triangle, area: " + area + " sq. units, bottom: "
+                + bottom + " units, heigh: " + heigh + " color: " + color);
     }
 }
