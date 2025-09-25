@@ -14,7 +14,7 @@ public class Rectangle extends FigureWithBottomAndHeigh {
 
     @Override
     public void draw() {
-        System.out.println("Figure: rectangle, area: " + area + " sq. units, bottom: " +
-                bottom + " units, heigh: " + heigh + " color: " + color);
+        System.out.println("Figure: rectangle, area: " + area + " sq. units, bottom: "
+                + bottom + " units, heigh: " + heigh + " color: " + color);
     }
 }

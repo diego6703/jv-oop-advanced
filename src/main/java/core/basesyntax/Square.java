@@ -14,7 +14,7 @@ public class Square extends FigureWithBottomAndHeigh {
 
     @Override
     public void draw() {
-        System.out.println("Figure: square, area: " + area + " sq. units, bottom: " +
-                bottom + " units, heigh: " + heigh + " color: " + color);
+        System.out.println("Figure: square, area: " + area + " sq. units, bottom: "
+                + bottom + " units, heigh: " + heigh + " color: " + color);
     }
 }
