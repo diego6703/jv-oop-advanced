@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 public abstract class FigureWithBottomAndHeight extends Figure {
     protected double bottom;
     protected double height;

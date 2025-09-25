@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 public class Constant {
     public static final int NUMBER_OF_COLORS = Colors.values().length;
     public static final int NUMBER_OF_FIGURES = 5;

@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 public class Rectangle extends FigureWithBottomAndHeight {
 
     public Rectangle(String color, double bottom, double heigh) {
