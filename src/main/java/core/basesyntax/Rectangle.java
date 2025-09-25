@@ -9,12 +9,12 @@ public class Rectangle extends FigureWithBottomAndHeight {
 
     @Override
     public double getArea() {
-        return bottom * height;
+        return width * height;
     }
 
     @Override
     public void draw() {
-        System.out.println("Figure: rectangle, area: " + area + " sq. units, bottom: "
-                + bottom + " units, height: " + height + " color: " + color);
+        System.out.println("Figure: rectangle, area: " + area + " sq. units, width: "
+                + width + " units, height: " + height + " color: " + color.toLowerCase());
     }
 }

@@ -1,12 +1,12 @@
 package core.basesyntax;
 
 public abstract class FigureWithBottomAndHeight extends Figure {
-    protected double bottom;
+    protected double width;
     protected double height;
 
-    public FigureWithBottomAndHeight(String color, double bottom, double height) {
+    public FigureWithBottomAndHeight(String color, double width, double height) {
         super(color);
-        this.bottom = bottom;
+        this.width = width;
         this.height = height;
     }
 

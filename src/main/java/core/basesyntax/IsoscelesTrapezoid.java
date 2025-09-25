@@ -11,12 +11,12 @@ public class IsoscelesTrapezoid extends FigureWithBottomAndHeight {
 
     @Override
     public double getArea() {
-        return (bottom + top) * height / Constant.DIVISION_FOR_AREA;
+        return (width + top) * height / Constant.DIVISION_FOR_AREA;
     }
 
     @Override
     public void draw() {
-        System.out.println("Figure: isosceles trapezoid, area: " + area + " sq. units, bottom: "
-                + bottom + " units, height: " + height + " top: " + top + " color: " + color);
+        System.out.println("Figure: isosceles trapezoid, area: " + area + " sq. units, width: "
+                + width + " units, height: " + height + " top: " + top + " color: " + color.toLowerCase());
     }
 }
