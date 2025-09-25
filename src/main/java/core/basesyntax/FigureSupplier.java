@@ -8,27 +8,30 @@ public class FigureSupplier {
 
     public Figure getRandomFigure() {
         int randomNumber = rg.nextInt(Constant.NUMBER_OF_FIGURES);
+        String randomColor = cs.getRandomColor();
+        double randomDouble = Constant.MIN_DIMENTION
+                + rg.nextDouble(Constant.MAX_DIMENTION - Constant.MIN_DIMENTION);
         switch (randomNumber) {
             case 0: {
-                return new Circle(cs.getRandomColor(), rg.nextDouble());
+                return new Circle(randomColor, randomDouble);
             }
             case 1: {
-                return new Rectangle(cs.getRandomColor(), rg.nextDouble(), rg.nextDouble());
+                return new Rectangle(randomColor, randomDouble, randomDouble);
             }
             case 2: {
-                return new RightTriangle(cs.getRandomColor(), rg.nextDouble(), rg.nextDouble());
+                return new RightTriangle(randomColor, randomDouble, randomDouble);
             }
             case 3: {
-                return new Square(cs.getRandomColor(), rg.nextDouble(), rg.nextDouble());
+                return new Square(randomColor, randomDouble);
             }
             default: {
-                return new IsoscelesTrapezoid(cs.getRandomColor(),rg.nextDouble(),
-                        rg.nextDouble(), rg.nextDouble());
+                return new IsoscelesTrapezoid(randomColor,randomDouble,
+                        randomDouble, randomDouble);
             }
         }
     }
 
     public Figure getDefaultFigure() {
-        return new Circle(Colors.WHITE.name(), Constant.DEFAULT_CIRCLE_RADIUS);
+        return new Circle(Constant.DEFAULT_COLOR, Constant.DEFAULT_CIRCLE_RADIUS);
     }
 }

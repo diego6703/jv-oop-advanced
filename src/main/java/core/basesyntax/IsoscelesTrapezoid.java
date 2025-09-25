@@ -1,6 +1,5 @@
 package core.basesyntax;
-
-public class IsoscelesTrapezoid extends FigureWithBottomAndHeigh {
+public class IsoscelesTrapezoid extends FigureWithBottomAndHeight {
     private double top;
 
     public IsoscelesTrapezoid(String color, double bottom, double heigh, double top) {
@@ -11,12 +10,12 @@ public class IsoscelesTrapezoid extends FigureWithBottomAndHeigh {
 
     @Override
     public double getArea() {
-        return (bottom + top) * heigh / Constant.DIVISION_FOR_AREA;
+        return (bottom + top) * height / Constant.DIVISION_FOR_AREA;
     }
 
     @Override
     public void draw() {
         System.out.println("Figure: isosceles trapezoid, area: " + area + " sq. units, bottom: "
-                + bottom + " units, heigh: " + heigh + " top: " + top + " color: " + color);
+                + bottom + " units, height: " + height + " top: " + top + " color: " + color);
     }
 }
